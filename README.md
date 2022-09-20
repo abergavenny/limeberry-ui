@@ -1,2 +1,2 @@
 # limeberry-ui
-Limeberry UI
+Limeberry UI - a UI library for educational purposes. ( I want to learn (: )
