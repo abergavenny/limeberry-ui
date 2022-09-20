@@ -1,12 +1,12 @@
 {
   "name": "limeberry-ui",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Limeberry UI",
   "type": "module",
-  "main": "dist/index.cjs",
-  "module": "dist/index.js",
+  "main": "dist/limeberry-ui.cjs",
+  "module": "dist/limeberry-ui.js",
   "exports": {
-    ".": "./dist/index.js",
+    ".": "./dist/limeberry-ui.js",
     "./styles.css": "./dist/styles.css"
   },
   "types": "./dist/index.d.ts",
