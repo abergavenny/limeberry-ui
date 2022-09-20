@@ -1,6 +1,6 @@
 {
   "name": "limeberry-ui",
-  "version": "0.0.6",
+  "version": "0.0.6-a",
   "description": "Limeberry UI",
   "type": "module",
   "main": "dist/limeberry.cjs",
