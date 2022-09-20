@@ -1,4 +1,4 @@
-import { default as Button } from "./Button.vue"
+import Button from "./Button.vue"
 
 export default Button
-export { Button }
+export { Button as LbButton }

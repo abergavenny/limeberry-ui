@@ -1,14 +1,13 @@
 <script setup lang="ts">
-import { inject, ref } from "vue"
+defineProps(['text'])
 </script>
 
 <template>
-    <div>
-        <span>Hello</span>
-        <button>Button</button>
-    </div>
+    <button class="lb-button" @click="$emit('handleClick')">{{ text }}</button>
 </template>
 
 <style>
-
+.lb-button {
+    background-color: hotpink;
+}
 </style>

@@ -1,22 +1,23 @@
 import { App } from "vue"
-import { Button } from "./components"
+
+import './assets/main.css'
 
 export interface LimeberryOptions {
     components?: Record<string, any>;
 }
 
 const createLimeberry = (options: LimeberryOptions = {}) => {
-
     const install = (app: App) => {
+        const { components } = options
 
-        app.component("lb-button", Button)
+        for (const key in components) {
+            app.component(key, components[key])
+        }
     }
 
     return { install }
 }
 
-export {
-    Button
-}
+export * as components from "./components"
 
 export default createLimeberry
