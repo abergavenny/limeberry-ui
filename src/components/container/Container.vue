@@ -1,10 +1,15 @@
-<script setup lang="ts"></script>
+<script lang="ts">
+import { VContainer } from 'vuetify/components';
+
+export default {
+    extends: VContainer,
+    setup: VContainer.setup
+}
+</script>
     
 <template>
     <div class="lb-container">
-        <v-container>
-            <slot />
-        </v-container>
+        <slot />
     </div>
 </template>
     
