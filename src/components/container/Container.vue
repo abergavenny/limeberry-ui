@@ -1,7 +1,11 @@
 <script setup lang="ts"></script>
     
 <template>
-    <div class="lb-container"><slot /></div>
+    <div class="lb-container">
+        <v-container>
+            <slot />
+        </v-container>
+    </div>
 </template>
     
 <style>

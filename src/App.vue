@@ -1,16 +1,26 @@
-<script setup lang="ts">
-const onClick = (): void => {}
-</script>
-
 <template>
-    <div>
-        <h1>Limeberry UI</h1>
-        <div>
-            <lb-button text="Limeberry UI - Button" @handle-click="onClick" />
-        </div>
-    </div>
+  <v-app>
+    <v-main>
+      <HelloWorld/>
+    </v-main>
+  </v-app>
 </template>
 
-<style>
+<script lang="ts">
+import { defineComponent } from 'vue'
+import HelloWorld from './components/HelloWorld.vue'
 
-</style>
+export default defineComponent({
+  name: 'App',
+
+  components: {
+    HelloWorld,
+  },
+
+  data () {
+    return {
+      //
+    }
+  },
+})
+</script>
